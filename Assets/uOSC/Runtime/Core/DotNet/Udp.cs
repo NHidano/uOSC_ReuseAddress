@@ -44,6 +44,7 @@ public class Udp : uOSC.Udp
             endPoint_ = new IPEndPoint(IPAddress.IPv6Any, port);
             udpClient_ = new UdpClient(AddressFamily.InterNetworkV6);
             udpClient_.Client.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, 0);
+            udpClient_.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, 1);
             udpClient_.Client.Bind(endPoint_);
         }
         catch (System.Exception e)
