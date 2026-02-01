@@ -1,15 +1,10 @@
 {
-    "name": "com.hecomi.uosc",
+    "name": "com.hidano.uosc",
     "version": "1.0.0",
-    "displayName": "uOSC",
-    "description": "A simple implementation of the OSC protocol",
+    "displayName": "uOSC_ReuseAddress",
+    "description": "uOSC with SO_REUSEADDR option enabled for Unity. A fast and lightweight OSC (Open Sound Control) library for Unity, supporting UDP communication.",
     "author": {
-        "name": "hecomi",
-        "url": "https://tips.hecomi.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/hecomi/uOSC"
+        "name": "hidano"
     },
     "keywords": [
         "osc",
